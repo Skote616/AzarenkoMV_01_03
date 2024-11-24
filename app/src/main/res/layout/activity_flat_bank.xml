@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlatBank">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/v3" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:text="@string/Registration"
+            android:textColor="@color/pink"
+            android:textSize="36dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/backblue"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_height="wrap_content"
+        android:text="@string/passandlog"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:layout_marginTop="65dp"/>
+        
+        <EditText
+            android:id="@+id/logline"
+            android:layout_width="282dp"
+            android:layout_marginStart="56dp"
+            android:hint="@string/Login"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/passline"
+            android:inputType="textPassword"
+            android:layout_marginTop="35dp"
+            android:layout_width="282dp"
+            android:layout_marginStart="56dp"
+            android:hint="@string/Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        
+        <Button
+            android:id="@+id/enterbut"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:onClick="enter"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="183dp"
+            android:text="@string/enter"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

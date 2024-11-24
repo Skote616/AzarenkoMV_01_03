@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SquareCounter">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toback"
+        android:textColor="@color/butback"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginStart="68dp"
+            android:text="Расчет площади"
+            android:textColor="@color/pink"
+            android:textSize="36dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/backblue"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnerl"
+            android:layout_width="307dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/backforspinner"
+            android:textAlignment="center">
+
+        </Spinner>
+        
+        <EditText
+            android:id="@+id/metres"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/black"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/black"
+            android:hint="@string/meterscount"
+            android:background="@drawable/backforspinner"/>
+
+        <Button
+            android:id="@+id/Count"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:onClick="Count"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/Count"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:background="@drawable/button_background"
+            />
+
+        <TextView
+            android:id="@+id/forRes"
+            android:layout_width="161dp"
+            android:gravity="center"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/result"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/black"
+            android:background="@drawable/backforspinner"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:onClick="backtomenu"
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/arrowb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

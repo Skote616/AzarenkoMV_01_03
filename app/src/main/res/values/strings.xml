@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AzarenkoMV_01_03</string>
+    <string name="Registration">Регистация</string>
+    <string name="Password">Пароль</string>
+    <string name="Login">Логин</string>
+    <string name="meterscount">введите количество метров</string>
+    <string name="result">результат</string>
+    <string name="Count">Рассчитать</string>
+    <string name="results">Результаты расчета</string>
+    <string name="regist">Регистрация</string>
+    <string name="metres">Количество метров</string>
+    <string name="enter">Войти</string>
+    <string name="passandlog">Введите ваш логин и пароль</string>
+    <string name="toback">на главное меню</string>
+
+    <string-array name="places">
+        1. 1-о комнатная квартира
+        2. 2-х комнатная квартира
+        3. 3-х комнатная квартира
+        4. Студия
+    </string-array>
+</resources>
